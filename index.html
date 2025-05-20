@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO APP</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: #f1f1f1;
+        }
+        .todo-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="todo-container">
@@ -14,14 +48,17 @@
         <ul id="taskList">
             <li><span>1 Edmundo</span> ✏️ ✅ ❌</li>
             <li><span>2 El madrid</span> ✏️ ✅ ❌</li>
-            <li><span>El PAPA se murio</span> ✏️ ✅ ❌</li>
-
+            <li><span>El PAPA se murió</span> ✏️ ✅ ❌</li>
         </ul>
         <div class="counters">
             <p>Total: <span id="totalTasks">3</span></p>
             <p>Completed: <span id="completedTasks">0</span></p>
-            <p>Incompleted: <span id="incompleteTasks">3</span></p>
+            <p>Incomplete: <span id="incompleteTasks">3</span></p>
         </div>
     </div>
+
+    <footer>
+        <p>🤠 Hecho por <a href="https://github.com/Maquitodeveloper" target="_blank">Maquitodeveloper</a> 🤠</p>
+    </footer>
 </body>
 </html>
