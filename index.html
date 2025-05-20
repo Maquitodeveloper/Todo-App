@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>TODO APP</h1>
+        <input type="text" id="taskInput" placeholder="Create some task...">
+        <p id="errorMessage" class="error">A task must be provided.</p>
+        <ul id="taskList">
+            <li><span>1 Edmundo</span> ✅ ❌</li>
+            <li><span>2 El madrid</span> ✅ ❌</li>
+            <li><span>El PAPA se murio</span> ✅ ❌</li>
+        </ul>
+        <div class="counters">
+            <p>Total: <span id="totalTasks">3</span></p>
+            <p>Completed: <span id="completedTasks">0</span></p>
+            <p>Incompleted: <span id="incompleteTasks">3</span></p>
+        </div>
+    </div>
+</body>
+</html>
